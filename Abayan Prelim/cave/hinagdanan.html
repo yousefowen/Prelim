@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Page with Picture and Description</title>
+<style>
+    
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .description {
+    width: 50%;
+    padding: 20px;
+  }
+  .description h2 {
+    margin-top: 0;
+  }
+  .image {
+    width: 50%;
+    text-align: center;
+  }
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .description, .image {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html"class="active">About</a>
+        <a href="services.html"class="active">Services</a>
+        <a href="contact.html"class="active">Contact</a>
+      </div>
+<div class="container">
+  <div class="description">
+    <h2>Description Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet gravida augue. Curabitur bibendum elit sed ipsum dapibus, nec vulputate arcu ultrices. Phasellus tincidunt est ut suscipit convallis.</p>
+    <p>Nulla facilisi. Fusce eu libero a elit viverra lacinia. Sed laoreet magna id velit ultricies, nec commodo lectus dictum.</p>
+  </div>
+  <div class="image">
+    <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+  </div>
+</div>
+<footer>
+    <div class="footer">
+        <center>
+      <p>&copy; 2024 Bohol Tourism. All rights reserved.</p>
+      </center>
+    </div>
+  </footer>
+</body>
+</html>
